@@ -7,19 +7,16 @@
       <router-view>
       </router-view>
     </div>
-
-
   </div>
 </template>
 
 <script>
 import Dashboard from './components/Dashboard.vue';
-// import About from './components/About';
 export default {
   name: 'App',
   components: {
-    Dashboard
-  }
+    Dashboard, 
+  },
 }
 </script>
 

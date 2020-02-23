@@ -9,12 +9,8 @@
           <img :src="logo.img" alt="logotipo" />
         </div>
         <ul class="nav-links">
-          <li>
-          <router-link to="./">About</router-link> 
-            <hr />
-          </li>
-            <li>
-          <router-link to="./Projects.vue">Projects</router-link> 
+          <li v-for="link in navLinks" :key="link">
+            <router-link :to="{ name: link }">{{link}}</router-link>
             <hr />
           </li>
         </ul>
@@ -27,13 +23,14 @@
         </ul>
       </div>
     </div>
+    
   </div>
 </template>
 
 <script>
 export default {
   name: "Dashboard",
-  props: {},
+  props: [],
   data() {
     return {
       toogle: false,
@@ -94,7 +91,7 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap");
 .Dashboard {
-  width: 100%;
+  width: 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -119,7 +116,7 @@ export default {
   width: 30px;
   height: 35px;
   z-index: 2;
-  animation: toogleMenu 0.3s ease-in forwards;
+  animation: toogleMenu 0.6s ease-in .2s;
 }
 .logo img {
   width: 100%;
@@ -149,33 +146,33 @@ ul.nav-links li a {
   width: 25px;
   height: 28px;
   border-radius: 50%;
-  background-color:rgba(70, 62, 129, 0.055);
+  background-color: rgba(70, 62, 129, 0.055);
   position: relative;
 }
 .social-media li:hover {
-  background-color:rgba(70, 62, 129, 0.815);
-  transition: all .3s ease-out;
+  background-color: rgba(70, 62, 129, 0.815);
+  transition: all 0.3s ease-out;
 }
-.social-media a{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social-media a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-media a img {
-    width: 15px;
+  width: 15px;
 }
 @keyframes toogleMenu {
   0% {
-    transform: translate(-600px, -600px);
+    transform: translateX(-600px);
   }
 
   100% {
-    transform: translate(0%, 0%);
+    transform: translateX(0%);
   }
 }
 @media (min-width: 768px) {

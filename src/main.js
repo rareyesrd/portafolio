@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
+import Contact from './components/Contact.vue'
 
 
 Vue.use(VueRouter)
@@ -11,8 +12,9 @@ Vue.config.productionTip = false
 
 const router = new VueRouter({
   routes:[
-    {path: './', component: About},
-    {path: './Projects.vue', component: Projects}
+    {path: '', name: 'About', component: About},
+    {path: './Projects.vue', name: 'Projects',  component: Projects},
+    {path: './Contact.vue', name: 'Contact', component: Contact}
   ],
   mode: 'history'
 });
