@@ -9,8 +9,12 @@
           <img :src="logo.img" alt="logotipo" />
         </div>
         <ul class="nav-links">
-          <li v-for="link in navLinks" :key="link">
-            <a href>{{link}}</a>
+          <li>
+          <router-link to="./">About</router-link> 
+            <hr />
+          </li>
+            <li>
+          <router-link to="./Projects.vue">Projects</router-link> 
             <hr />
           </li>
         </ul>
@@ -145,7 +149,7 @@ ul.nav-links li a {
   width: 25px;
   height: 28px;
   border-radius: 50%;
-  background-color:rgba(70, 62, 129, 0.178);
+  background-color:rgba(70, 62, 129, 0.055);
   position: relative;
 }
 .social-media li:hover {
