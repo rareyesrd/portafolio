@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="left" scroll="none">
+    <div class="left">
       <Dashboard />
     </div>
     <div class="right">
@@ -28,11 +28,12 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-.left{
-  width: 20%;
-  height: 100vh;
-}
 .right{
-  width: 80%;
+  width: 100%;
+} 
+@media(min-width:768px){
+  .right{
+    width: 80%;
+  }
 }
 </style>

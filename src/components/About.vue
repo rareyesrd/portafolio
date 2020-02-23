@@ -3,7 +3,7 @@
       <div class="jumbotrom">
           <div class="content">
             <h3>Rafael A. Reyes</h3>
-            <p>I'm a student from UTESA (Universidad Tecnología de Santiago)</p>
+            <p>I'm a student from UTESA (Universidad Tecnológica de Santiago)</p>
           </div>
       </div>
       <Copyright />
@@ -29,6 +29,7 @@ export default {
 
 <style scoped>
 .About{
+    
     height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
