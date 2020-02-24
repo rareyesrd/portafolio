@@ -121,8 +121,7 @@ export default {
 .logo img {
   width: 100%;
   max-width: 170px;
-  box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3);
-
+  /* box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3); */
 }
 ul {
   list-style: none;
