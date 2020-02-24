@@ -1,14 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import VueScrollProgress from 'vue-scroll-progress'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 
-Vue.use(VueScrollProgress)
 Vue.use(VueRouter)
-
 Vue.config.productionTip = false
 
 const router = new VueRouter({

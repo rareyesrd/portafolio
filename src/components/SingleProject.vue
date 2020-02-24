@@ -60,13 +60,22 @@ export default {
 
 <style scoped lang="scss">
 .singleProject {
-  box-shadow: 2px 2px 1px #f3f3f3;
   width: 95%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
   .project-view {
+    -webkit-box-shadow: 3px 42px 61px -20px rgba(73, 7, 143, 1);
+    -moz-box-shadow: 3px 42px 61px -20px rgba(73, 7, 143, 1);
+    box-shadow: 3px 42px 61px -20px rgba(73, 7, 143, 1);
+    border-radius: 10px;
     img {
       width: 100%;
     }
@@ -74,8 +83,15 @@ export default {
   .goto-links {
     display: flex;
     justify-content: space-around;
-    a{
-        background-color: #f3f3f3;
+    align-items: center;
+    background-color: #f3f3f3;
+    a {
+      font-size: 12px;
+      padding: 10px 15px;
+      text-decoration: none;
+      border: 1px solid #5323c4;
+      border-radius: 10px;
+      margin: 10px;
     }
   }
 }

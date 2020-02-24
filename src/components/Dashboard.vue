@@ -195,7 +195,7 @@ ul.nav-links li a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(70, 62, 129, 0.8);
+    background-color: rgba(73, 7, 143, 0.9);
     transform: translateX(0%);
   }
 }

@@ -1,5 +1,4 @@
 <template>
-  <VueScrollProgress>
     <div id="app">
       <div class="left">
         <Dashboard />
@@ -10,7 +9,6 @@
         </transition>
       </div>
     </div>
-  </VueScrollProgress>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <h1>Projects Working</h1>
+    <h1>Here you can see, what i've built 💪🏾</h1>
 
     <transition>
       <div class="grid-projects">
@@ -25,6 +25,7 @@ export default {
   margin-top: 40px;
   h1 {
     text-align: center;
+    margin-bottom: 50px
   }
   .v-enter-active {
     animation: fade 0.7s;
