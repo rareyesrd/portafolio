@@ -84,6 +84,7 @@ export default {
     padding-top: 200px;
     h2{
       font-size: 5rem;
+      color: #fff;
        @media(max-width:768px){
           font-size: 3rem;
         }
@@ -91,10 +92,8 @@ export default {
     .form-container {
       form {
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        place-items: center;
         .inputs {
           width: 100%;
           margin: 0 auto;
@@ -126,7 +125,7 @@ export default {
               padding: 0 20px 0 23px;
               display: block;
               width: 100%;
-              background: transparent;
+              background: #fff;
               font-family: SourceSansPro-Bold;
               font-size: 16px;
               color: #4b2354;
