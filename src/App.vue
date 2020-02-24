@@ -29,6 +29,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: space-between;
+
 }
 .v-enter-active{
   animation: bounceIn .5s;

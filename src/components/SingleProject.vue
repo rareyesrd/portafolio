@@ -76,8 +76,6 @@ export default {
     box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3);
     img {
       width: 100%;
-  border-radius: 10%;
-
     }
   }
   .goto-links {

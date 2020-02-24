@@ -22,6 +22,7 @@ export default {
 
 <style scoped lang="scss">
 .projects {
+  color: #fff;
   margin-top: 40px;
   h1 {
     text-align: center;

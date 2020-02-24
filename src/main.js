@@ -4,7 +4,8 @@ import VueRouter from 'vue-router'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
-
+import ProgressBar from 'vuejs-progress-bar'
+Vue.use(ProgressBar)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
