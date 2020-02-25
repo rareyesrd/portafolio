@@ -5,9 +5,7 @@
         <Dashboard />
       </div>
       <div class="right">
-        <transition 
-        name="fade"
-        mode="out-in">
+        <transition>
         <router-view></router-view>
         </transition>
       </div>
@@ -33,16 +31,26 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+.v-enter-active{
+  animation: bounceIn .5s;
 }
+.v-leave-active {
+   animation: bounceIn .5s reverse;
+}
+@keyframes bounceIn{
+  0%{
+    transform:scale(0.1);
+    opacity: 0;
+  }
+  60%{
+      transform:scale(1.2);
+      opacity: .5;
+  }
+  100%{
+      transform: scale(1);
+    opacity: 1;
 
-.fade-enter,
-.fade-leave-active {
-  opacity: 0
+  }
 }
 
 .right {
