@@ -72,12 +72,12 @@ export default {
     grid-template-columns: 1fr;
   }
   .project-view {
-    -webkit-box-shadow: 3px 42px 61px -20px rgba(73, 7, 143, 1);
-    -moz-box-shadow: 3px 42px 61px -20px rgba(73, 7, 143, 1);
-    box-shadow: 3px 42px 61px -20px rgba(73, 7, 143, 1);
-    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3);
     img {
       width: 100%;
+  border-radius: 10%;
+
     }
   }
   .goto-links {
