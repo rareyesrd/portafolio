@@ -75,51 +75,5 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  .wrapper {
-    background: linear-gradient(to right,rgb(0, 0, 0) 50%,rgb(134, 69, 215) 50%);
-    width: 80%;
-    margin: 0 auto;
-    box-shadow: 20px 20px 30px 3px rgba(99, 50, 246, 0.3);
-    h2{
-      text-align: center;
-      font-size: 35px;
-      padding: 25px 0px;
-      color: #fff;
-    }
-    .form-container {
-      width: 80%;
-      margin: 0 auto;
-      height: 80vh;
-      padding: 200px 0px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      form {
-        background-color: #fff;
-      box-shadow: 20px 20px 30px 3px rgba(255, 255, 255, 0.3);
-
-        width: 100%;
-          input, textarea {
-            width: 100%;
-            padding: 5px;
-            margin-top: 10px;
-            border-radius: 10px;
-            border: none;
-          }
-      }
-      .company-info {
-        background-color: rgb(0, 0, 0);
-      box-shadow: 20px 20px 30px 3px rgba(255, 255, 255, 0.3);
-
-        width: 100%;
-        color: #fff;
-        ul {
-          list-style: none;
-          li {
-            font-size: 25px;
-          }
-        }
-      }
-    }
-  }
 }
 </style>
