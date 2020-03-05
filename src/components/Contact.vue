@@ -83,10 +83,10 @@ export default {
     bottom: 0;
     padding-top: 200px;
     h2{
-      font-size: 5rem;
+      font-size: 3.3rem;
       color: #fff;
        @media(max-width:768px){
-          font-size: 3rem;
+          font-size: 2rem;
         }
     }
     .form-container {

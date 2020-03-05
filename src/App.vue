@@ -52,7 +52,9 @@ export default {
 
   }
 }
-
+.left{
+  z-index: 1;
+}
 .right {
   position: relative;
   width: 100%;

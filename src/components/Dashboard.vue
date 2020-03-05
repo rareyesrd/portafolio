@@ -80,6 +80,7 @@ export default {
       if (!this.toogle) {
         this.count = 1;
         this.toogle = !this.toogle;
+        console.log("Holllog")
       } else {
         this.count = 0;
         this.toogle = !this.toogle;
@@ -91,7 +92,7 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap");
 .Dashboard {
-  width: 50%;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -110,9 +111,9 @@ export default {
   z-index: 1;
 }
 .menu {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  left: 10px;
+  right: 10px;
   width: 30px;
   height: 35px;
   z-index: 2;
