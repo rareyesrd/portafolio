@@ -21,36 +21,6 @@ export default {
           alt: "La granja",
           github: "https://github.com/rareyesrd",
           demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
         }
       ]
     };

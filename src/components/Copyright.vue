@@ -24,6 +24,7 @@ export default {
         bottom: 30px;
     }
     p{
+        color: #fff;
         font-size: 12px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }

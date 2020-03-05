@@ -80,7 +80,6 @@ export default {
       if (!this.toogle) {
         this.count = 1;
         this.toogle = !this.toogle;
-        console.log("Holllog")
       } else {
         this.count = 0;
         this.toogle = !this.toogle;

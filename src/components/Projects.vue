@@ -7,15 +7,17 @@
         <SingleProject />
       </div>
     </transition>
+    <Copyright />
   </div>
 </template>
 
 <script>
+import Copyright from './Copyright'
 import SingleProject from "./SingleProject";
 export default {
   name: "Projects",
   components: {
-    SingleProject
+    SingleProject, Copyright
   },
 };
 </script>
