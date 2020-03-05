@@ -54,6 +54,7 @@ export default {
 }
 
 .right {
+  position: relative;
   width: 100%;
   @media (min-width: 768px) {
       width: 80%;
