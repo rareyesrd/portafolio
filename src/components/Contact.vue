@@ -27,12 +27,10 @@
         </div>
       </form>
     </div>
-  <Copyright />
   </div>
 </template>
 
 <script>
-import Copyright from './Copyright'
 import Firebase from "firebase";
 import config from "../config";
 import toastr from "toastr";
@@ -45,7 +43,7 @@ export default {
     "Email from the portafolio webpage": messagesRef
   },
   components:{
-    Copyright
+    
   },
   data() {
     return {
@@ -84,7 +82,7 @@ export default {
   padding-top: 200px;
   h2 {
     font-size: 3.3rem;
-    color: #fff;
+    color: #000;
     @media (max-width: 768px) {
       font-size: 2rem;
     }
