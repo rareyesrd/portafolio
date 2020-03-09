@@ -21,15 +21,15 @@ export default {
     .Copyright{
         position: fixed;
         right: 30px;
-        bottom: 30px;
+        bottom: 10px;
     }
     p{
-        color: #fff;
+        color: rgba(0,0,0,0.8);
         font-size: 12px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     p span{
-        padding-bottom: 3px;
+        padding-bottom: 1px;
         border-bottom: 1px solid #ad56a9;
     }
 </style>

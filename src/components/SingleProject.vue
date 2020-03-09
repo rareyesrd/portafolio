@@ -13,17 +13,11 @@
 <script>
 export default {
   name: "SingleProject",
-  data() {
-    return {
-      project: [
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        }
-      ]
-    };
+  props:{
+    project:{
+      type: Array,
+      required: true
+    }
   }
 };
 </script>
@@ -31,6 +25,7 @@ export default {
 <style scoped lang="scss">
 .singleProject {
   width: 95%;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -42,23 +37,29 @@ export default {
     grid-template-columns: 1fr;
   }
   .project-view {
-    background-color: transparent;
-    box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3);
     img {
       width: 100%;
+      box-shadow: 0 15px 30px 0 rgba(99, 50, 246, 0.2);
+      border-radius: 10px;
     }
   }
   .goto-links {
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: rgba(99, 50, 246, .3);
+    border-radius: 10px;
+
     a {
       font-size: 12px;
       padding: 10px 15px;
       text-decoration: none;
-      border: 1px solid #5323c4;
+      border: 1px solid #f7f7f7;
       border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3);
       margin: 10px;
     }
   }

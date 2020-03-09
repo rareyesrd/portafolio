@@ -115,13 +115,14 @@ export default {
           padding-left: 30px;
           padding-right: 30px;
           h5 {
-              display: block;
-              font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-              font-size: 1rem;
-              font-weight: 400;
-              margin-bottom: 1rem;
-              text-transform: capitalize;
-
+            display: block;
+            font-family: Nunito Sans, -apple-system, BlinkMacSystemFont,
+              Segoe UI, Roboto, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+              Helvetica Neue, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
           }
         }
       }
@@ -140,8 +141,10 @@ export default {
   }
   @media (min-width: 768px) {
     width: 100%;
+    max-width: 1550px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgba(247, 247, 247, 0.884);
     color: rgba(0, 0, 0, 0.89);
     background: url("../assets/aboutBg2.png") no-repeat center center/cover;
     display: flex;
@@ -163,15 +166,16 @@ export default {
           align-items: flex-end;
           div {
             h1 {
-              font-size: 75px;
+              font-size: 85px;
               margin-left: -100px;
               font-weight: bold;
-              color: #4b2354;
+              color: #000;
             }
           }
           .university {
             h5 {
-              font-size: 20px;
+              font-size: 22px;
+              font-weight: bold;
             }
           }
         }
@@ -180,42 +184,45 @@ export default {
         .svg-background {
           display: none;
         }
-        .content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div {
-          margin-left: -100px;
+        .content {
           display: flex;
-          flex-direction: column;
           justify-content: space-between;
-          p {
-            font-size: 15px;
-            font-weight: bold;
+          align-items: center;
+          div {
+            margin-left: -100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            max-width: 350px;
+            p {
+              font-size: 18px;
+              font-weight: bold;
+              text-transform: capitalize;
+            }
           }
-        }
-        div.skills {
-          width: 150px;
-          h5 {
-            font-size: 22px;
-            font-weight: bold;
-          }
-          ul {
-            list-style: square;
-            li {
-              display: flex;
-              padding-bottom: 5px;
-              &::before {
-                list-style: square;
-              }
-              p {
-                font-size: 15px;
-                font-weight: lighter;
-                flex: 1;
+          div.skills {
+            width: 150px;
+            h5 {
+              font-size: 22px;
+              font-weight: bold;
+            }
+            ul {
+              list-style: square;
+              li {
+                display: flex;
+                padding-bottom: 5px;
+                &::before {
+                  list-style: square;
+                }
+                p {
+                  font-size: 15px;
+                  font-weight: lighter;
+                  flex: 1;
+                }
               }
             }
           }
-        }}
+        }
       }
     }
   }

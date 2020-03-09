@@ -4,7 +4,7 @@
 
     <transition>
       <div class="grid-projects">
-        <SingleProject />
+        <SingleProject :project="project"/>
       </div>
     </transition>
     <Copyright />
@@ -19,6 +19,48 @@ export default {
   components: {
     SingleProject, Copyright
   },
+  data(){
+    return{
+      project: [
+        {
+          img: require("../assets/projects/laGranja.png"),
+          alt: "La granja",
+          github: "https://github.com/rareyesrd",
+          demo: "http://rarepz.com/"
+        },
+        {
+          img: require("../assets/projects/laGranja.png"),
+          alt: "La granja",
+          github: "https://github.com/rareyesrd",
+          demo: "http://rarepz.com/"
+        },
+        {
+          img: require("../assets/projects/laGranja.png"),
+          alt: "La granja",
+          github: "https://github.com/rareyesrd",
+          demo: "http://rarepz.com/"
+        },
+        {
+          img: require("../assets/projects/laGranja.png"),
+          alt: "La granja",
+          github: "https://github.com/rareyesrd",
+          demo: "http://rarepz.com/"
+        },
+        {
+          img: require("../assets/projects/laGranja.png"),
+          alt: "La granja",
+          github: "https://github.com/rareyesrd",
+          demo: "http://rarepz.com/"
+        },
+        {
+          img: require("../assets/projects/laGranja.png"),
+          alt: "La granja",
+          github: "https://github.com/rareyesrd",
+          demo: "http://rarepz.com/"
+        }
+      ]
+    }
+  }
 };
 </script>
 
