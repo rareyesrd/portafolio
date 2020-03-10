@@ -3,7 +3,9 @@
     <div v-for="prop in project" :key="prop.alt" class="project-view">
       <img :src="prop.img" :alt="prop.alt" />
       <div class="goto-links">
-        <a :href="prop.github" target="_blank">GITHUB</a>
+        <div v-if="prop.target">
+          <a :href="prop.github" target="_blank">GITHUB</a>
+        </div>
         <a :href="prop.demo" target="_blank">DEMO</a>
       </div>
     </div>
@@ -13,8 +15,8 @@
 <script>
 export default {
   name: "SingleProject",
-  props:{
-    project:{
+  props: {
+    project: {
       type: Array,
       required: true
     }
@@ -49,7 +51,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(99, 50, 246, .3);
+    background-color: rgba(99, 50, 246, 0.3);
     border-radius: 10px;
 
     a {
@@ -58,8 +60,8 @@ export default {
       text-decoration: none;
       border: 1px solid #f7f7f7;
       border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.05);
-    box-shadow: 0 15px 30px 0 rgba(99, 50, 246, .3);
+      background-color: rgba(0, 0, 0, 0.05);
+      box-shadow: 0 15px 30px 0 rgba(99, 50, 246, 0.3);
       margin: 10px;
     }
   }

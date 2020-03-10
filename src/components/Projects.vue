@@ -23,41 +23,47 @@ export default {
     return{
       project: [
         {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
+          img: require("../assets/projects/grafifast.png"),
+          alt: "Grafifast",
+          github: "/",
+          demo: "http://www.grafifast.com/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/metralla.png"),
+          alt: "Metralla fuegos artificiales",
+          github: "/",
+          demo: "http://landingcontent.paginasamarillas.com.do/w/fuegosmetralla/index.html",
+          target: false
+        },
+        {
+          img: require("../assets/projects/livamar.png"),
+          alt: "Livamar",
+          github: "/",
+          demo: "http://www.grupolivamar.com/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/cales.png"),
+          alt: "Cales Auto Services",
+          github: "/",
+          demo: "http://www.calesautoservicespr.com/",
+          target: false
         },
         {
           img: require("../assets/projects/laGranja.png"),
           alt: "La granja",
           github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
+          demo: "https://compassionate-mcclintock-5fe136.netlify.com",
+          target: true
         },
         {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
+          img: require("../assets/projects/eya.png"),
+          alt: "E y A",
+          github: "/",
+          demo: "http://landingcontent.paginasamarillas.com.do/w/eyacentrodeservicios/index.html",
+          target: false
         },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        },
-        {
-          img: require("../assets/projects/laGranja.png"),
-          alt: "La granja",
-          github: "https://github.com/rareyesrd",
-          demo: "http://rarepz.com/"
-        }
       ]
     }
   }
