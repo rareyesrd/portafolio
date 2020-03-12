@@ -64,6 +64,9 @@
         </div>
       </div>
     </div>
+    <div class="circle-animation">
+      <img src="../assets/geometry-circle.svg" alt="circle">
+    </div>
     <Copyright />
   </div>
 </template>
@@ -82,6 +85,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@font-face {
+  font-family: 'Rarepz-font';
+  src: url('../assets/fonts/Monument Extended Bold.ttf');
+}
 .About {
   background-color: blue;
   .container {
@@ -140,9 +147,10 @@ export default {
     }
   }
   @media (min-width: 768px) {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: rgba(0, 0, 0, 0.89);
-    background: url("../assets/bg-project.png") no-repeat center center/cover;
+    background: url("../assets/bg-about.svg") no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     .container {
@@ -162,17 +170,22 @@ export default {
         .content {
           display: flex;
           justify-content: space-between;
+          align-items: flex-end;
+          height: 100px;
           div {
             h1 {
-                 font-size: 7.5rem;
-    line-height: 1.1;
-    color: #000;
-    z-index: 2;
-    position: relative;
+              font-family: 'Rarepz-font';
+              font-size: 7.5rem;
+              line-height: 1.1;
+              color: #000;
+              z-index: 2;
+              position: relative;
+              text-shadow: 0px 2px 10px rgba(99, 50, 246, 0.5);
             }
           }
           .university {
             h5 {
+              font-family: 'Rarepz-font';
               font-size: 22px;
               font-weight: bold;
             }
@@ -188,15 +201,16 @@ export default {
           justify-content: space-between;
           align-items: center;
           div {
-            margin-left: -100px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             max-width: 350px;
             p {
-              font-size: 18px;
+              font-size: 19px;
               font-weight: bold;
-              text-transform: capitalize;
+              text-transform: uppercase;
+              line-height: 3;
+              font-weight: bold;
             }
           }
           div.skills {
@@ -225,5 +239,32 @@ export default {
       }
     }
   }
+  .circle-animation{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    img{
+      animation: rotate 8s infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  0%{
+    transform: translateY(0) translateX(0);
+  }
+  25%{
+    transform:  translateY(-30px) translateX(100px);
+  }
+   50%{
+    transform: translateY(0px) translateX(400px);
+  }
+  75%{
+    transform: rotate(0deg) translateY(0) translateX(0);
+  }
+  100%{
+    transform: rotate(360deg) ;
+  }
+  
 }
 </style>

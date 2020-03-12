@@ -10,7 +10,6 @@
       </div>
     </div>
 </template>
-
 <script>
 import Dashboard from "./components/Dashboard.vue";
 export default {
@@ -28,7 +27,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: space-between;
-
+  color: rgba(73, 7, 143, 0.322);
 }
 .v-enter-active{
   animation: bounceIn .5s;
