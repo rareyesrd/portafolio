@@ -1,10 +1,9 @@
 <template>
   <div class="projects">
     <h1>Here you can see, what i've built 💪🏾</h1>
-
     <transition>
       <div class="grid-projects">
-        <SingleProject :project="project"/>
+        <SingleProject :project="project" />
       </div>
     </transition>
     <Copyright />
@@ -12,15 +11,16 @@
 </template>
 
 <script>
-import Copyright from './Copyright'
+import Copyright from "./Copyright";
 import SingleProject from "./SingleProject";
 export default {
   name: "Projects",
   components: {
-    SingleProject, Copyright
+    SingleProject,
+    Copyright
   },
-  data(){
-    return{
+  data() {
+    return {
       project: [
         {
           img: require("../assets/projects/grafifast.png"),
@@ -33,7 +33,8 @@ export default {
           img: require("../assets/projects/metralla.png"),
           alt: "Metralla fuegos artificiales",
           github: "/",
-          demo: "http://landingcontent.paginasamarillas.com.do/w/fuegosmetralla/index.html",
+          demo:
+            "http://landingcontent.paginasamarillas.com.do/w/fuegosmetralla/index.html",
           target: false
         },
         {
@@ -61,22 +62,89 @@ export default {
           img: require("../assets/projects/eya.png"),
           alt: "E y A",
           github: "/",
-          demo: "http://landingcontent.paginasamarillas.com.do/w/eyacentrodeservicios/index.html",
+          demo:
+            "http://landingcontent.paginasamarillas.com.do/w/eyacentrodeservicios/index.html",
           target: false
         },
+        {
+          img: require("../assets/projects/raimobiliarias.png"),
+          alt: "RA Inmobiliarias",
+          github: "/",
+          demo: "http://www.rainmobiliaria.com.do/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/dispensarioantituberculosoadultos.png"),
+          alt: "Dispensario antituberculos o adultos",
+          github: "/",
+          demo:
+            "http://landingcontent.paginasamarillas.com.do/w/dispensarioantituberculosoadultos.com/",
+          target: false
+        },
+          {
+            img: require("../assets/projects/vaUniforms.png"),
+            alt: "La granja",
+            github: "/",
+            demo: "http://www.avauniformspr.com/",
+            target: false
+          },
+        {
+          img: require("../assets/projects/drgarridomendez.png"),
+          alt: "Dr Garrido Mendez",
+          github: "/",
+          demo: "http://www.drgarridomendez.com/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/duotecheirl.png"),
+          alt: "Duotech irl",
+          github: "/",
+          demo: "http://duotecheirl.com/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/permaca.png"),
+          alt: "Permaca",
+          github: "/",
+          demo: "http://www.permaca.com.do/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/imecasoldadura.png"),
+          alt: "Imeca soldadura",
+          github: "/",
+          demo: "http://www.imecasoldadura.com/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/learningcenter.png"),
+          alt: "Learning Center",
+          github: "/",
+          demo: "http://www.learningcenterdr.com/",
+          target: false
+        },
+        {
+          img: require("../assets/projects/plantaselectricas.png"),
+          alt: "Plantas eléctricas",
+          github: "/",
+          demo: "http://www.plantaselectricasdominicanas.com/",
+          target: false
+        }
       ]
-    }
+    };
   }
 };
 </script>
 
 <style scoped lang="scss">
 .projects {
+  background: url('../assets/bg-project.png') no-repeat center center/cover;
+  height: 100%;
   color: #000;
   margin-top: 40px;
   h1 {
     text-align: center;
-    margin-bottom: 50px
+    margin-bottom: 50px;
   }
   .v-enter-active {
     animation: fade 0.7s;
@@ -95,6 +163,5 @@ export default {
       opacity: 1;
     }
   }
-  
 }
 </style>

@@ -140,36 +140,35 @@ export default {
     }
   }
   @media (min-width: 768px) {
-    width: 100%;
-    max-width: 1550px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: rgba(247, 247, 247, 0.884);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: rgba(0, 0, 0, 0.89);
-    background: url("../assets/aboutBg2.png") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
+    background: url("../assets/bg-project.png") no-repeat center center/cover;
+    width: 100%;
     height: 100vh;
     .container {
       width: 70%;
       margin: 0 auto;
-      padding-top: 0px;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-top: 0;
       .square-position {
-        height: 80vh;
+        // position: relative;
+        height: 0;
         .svg-background {
           display: none;
         }
         .content {
-          height: 30vh;
           display: flex;
           justify-content: space-between;
-          align-items: flex-end;
           div {
             h1 {
-              font-size: 85px;
-              margin-left: -100px;
-              font-weight: bold;
-              color: #000;
+                 font-size: 7.5rem;
+    line-height: 1.1;
+    color: #000;
+    z-index: 2;
+    position: relative;
             }
           }
           .university {
