@@ -83,7 +83,7 @@ export default {
         },
           {
             img: require("../assets/projects/vaUniforms.png"),
-            alt: "La granja",
+            alt: "Va Uniforms",
             github: "/",
             demo: "http://www.avauniformspr.com/",
             target: false

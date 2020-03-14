@@ -10,13 +10,19 @@
       </div>
     </div>
 </template>
+
 <script>
 import Dashboard from "./components/Dashboard.vue";
 export default {
   name: "App",
   components: {
     Dashboard
-  }
+  },
+  data(){
+    return{
+      
+    }
+  },
 };
 </script>
 
@@ -59,14 +65,5 @@ export default {
   @media (min-width: 768px) {
       width: 80%;
   }
-}
-#progress-container-el {
-  /* background */
-  background-color: #44cf28 !important;
-}
-
-#progress-el {
-  /* progress bar */
-  background-color: red !important;
 }
 </style>

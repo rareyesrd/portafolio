@@ -29,12 +29,10 @@
     </div>
   </div>
 </template>
-
 <script>
 import Firebase from "firebase";
 import config from "../config";
 import toastr from "toastr";
-
 let app = Firebase.initializeApp(config);
 let messagesRef = app.database().ref("messages");
 export default {
