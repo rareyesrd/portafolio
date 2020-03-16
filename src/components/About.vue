@@ -131,7 +131,6 @@ export default {
   color: rgba(0, 0, 0, 0.89);
   background: url("../assets/bg-about.svg") no-repeat center center/cover;
   height: 100vh;
-  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -144,11 +143,19 @@ export default {
     right: 0;
     bottom: 0;
   }
+  @media(max-width: 768px){
+    background: #fff;
+    cursor: default;
+  }
 }
 .content {
   .container {
+  height: 100vh;
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     .square-position {
       .content {
         display: grid;

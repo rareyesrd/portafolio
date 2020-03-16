@@ -102,4 +102,9 @@ export default {
   display: grid;
   place-items: center;
 }
+@media(max-width: 768px){
+    .cursor{
+      display: none;
+    }
+  }
 </style>
