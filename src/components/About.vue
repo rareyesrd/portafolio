@@ -1,5 +1,23 @@
 <template>
   <div class="About">
+   <vue-particles
+        color="#49078f"
+        :particleOpacity="0.5"
+        :particlesNumber="80"
+        shapeType="edge"
+        :particleSize="4"
+        linesColor="#49078f"
+        :linesWidth="2"
+        :lineLinked="true"
+        :lineOpacity="0.2"
+        :linesDistance="200"
+        :moveSpeed="5"
+        :hoverEffect="true"
+        hoverMode="repulse"
+        :clickEffect="true"
+        clickMode="push"
+      >
+      </vue-particles>
     <div class="content">
       <div class="container">
         <div class="square-position">
@@ -54,9 +72,9 @@
         </div>
       </div>
     </div>
-    <div class="circle-animation">
+    <!-- <div class="circle-animation">
       <img src="../assets/geometry-circle.svg" alt="circle" />
-    </div>
+    </div>-->
     <Copyright />
   </div>
 </template>
@@ -113,6 +131,18 @@ export default {
   background: url("../assets/bg-about.svg") no-repeat center center/cover;
   height: 100vh;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  #particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 .content {
   .container {
@@ -134,7 +164,7 @@ export default {
             z-index: 2;
             position: relative;
             text-shadow: 0px 2px 10px rgba(99, 50, 246, 0.5);
-            transition: all .3s ease-in;
+            transition: all 0.3s ease-in;
             animation: flip 8s infinite;
             @media (max-width: 768px) {
               font-size: 3.5rem;
@@ -159,7 +189,7 @@ export default {
     }
     .square-position2 {
       margin-top: 150px;
-      margin-bottom:20px;
+      margin-bottom: 20px;
       .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -211,30 +241,30 @@ export default {
           grid-template-columns: 1fr;
         }
       }
-@media (max-width: 768px) {
-          margin-top: 30px;
-        }
+      @media (max-width: 768px) {
+        margin-top: 30px;
+      }
     }
   }
 }
-.circle-animation {
-  position: absolute;
-  top: 30%;
-  left: 1%;
-  img {
-    width: 250px;
-    animation: rotate 12s infinite;
-    @media (max-width: 768px) {
-      width: 230px;
-    }
-    @media (max-width: 992px) {
-      width: 200px;
-    }
-  }
-  @media (max-width: 768px) {
-   display: none;
-  }
-}
+// .circle-animation {
+//   position: absolute;
+//   top: 30%;
+//   left: 1%;
+//   img {
+//     width: 250px;
+//     animation: rotate 12s infinite;
+//     @media (max-width: 768px) {
+//       width: 230px;
+//     }
+//     @media (max-width: 992px) {
+//       width: 200px;
+//     }
+//   }
+//   @media (max-width: 768px) {
+//    display: none;
+//   }
+// }
 @keyframes rotate {
   0% {
     transform: translateY(0) translateX(0);
@@ -253,17 +283,17 @@ export default {
   }
 }
 @keyframes flip {
-   0% {
-      transform: perspective(0px) scale(1);
-      animation-timing-function: ease-out;
-   }  
-   50% {
-      transform: perspective(400px) scale(1.1);
-      animation-timing-function: ease-in;
-   }
-   100% {
-      transform: perspective(0px) scale(1);
-      animation-timing-function: ease;
-   }
-} 
+  0% {
+    transform: perspective(0px) scale(1);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) scale(1.1);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(0px) scale(1);
+    animation-timing-function: ease;
+  }
+}
 </style>

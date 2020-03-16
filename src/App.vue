@@ -5,24 +5,6 @@
         <Dashboard />
       </div>
       <div class="right">
-         <vue-particles
-        color="#000"
-        :particleOpacity="0.7"
-        :particlesNumber="80"
-        shapeType="circle"
-        :particleSize="4"
-        linesColor="#000"
-        :linesWidth="1"
-        :lineLinked="true"
-        :lineOpacity="0.4"
-        :linesDistance="150"
-        :moveSpeed="3"
-        :hoverEffect="true"
-        hoverMode="grab"
-        :clickEffect="true"
-        clickMode="push"
-      >
-      </vue-particles>
         <transition>
         <router-view >
         
@@ -83,6 +65,7 @@ export default {
 .right {
   position: relative;
   width: 100%;
+  height: 100%;
   @media (min-width: 768px) {
       width: 80%;
   }

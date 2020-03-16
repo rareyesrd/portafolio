@@ -1,5 +1,5 @@
 <template>
-  <div class="Dashboard">
+  <div class="Dashboard" :class="{fixed: toogle}">
     <div class="menu" v-on:click="toggleMenu">
       <img :src="menu[count].icon" :alt="menu[count].alt" />
     </div>
@@ -92,12 +92,14 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap");
 .Dashboard {
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   overflow: hidden;
+}
+.Dashboard.fixed{
+  position: fixed;
 }
 .nav-content {
   height: 100vh;

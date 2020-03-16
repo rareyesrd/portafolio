@@ -138,10 +138,15 @@ export default {
 
 <style scoped lang="scss">
 .projects {
-  background: url('../assets/bg-project.png') no-repeat center center/cover;
+  // background: url('../assets/bg-project.png') no-repeat center center/cover;
   height: 100%;
   color: #000;
   margin-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   h1 {
     text-align: center;
     margin-bottom: 50px;
