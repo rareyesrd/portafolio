@@ -111,7 +111,7 @@ export default {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(0, 0, 0, 0.89);
   background: url("../assets/bg-about.svg") no-repeat center center/cover;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 .content {

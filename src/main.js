@@ -5,6 +5,8 @@ import About from './components/About.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import ProgressBar from 'vuejs-progress-bar'
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 Vue.use(ProgressBar)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
