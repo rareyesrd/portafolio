@@ -12,8 +12,8 @@ Vue.config.productionTip = false
 const router = new VueRouter({
   routes:[
     {path: '', name: 'About', component: About},
-    {path: './Projects.vue', name: 'Projects',  component: Projects},
-    {path: './Contact.vue', name: 'Contact', component: Contact}
+    {path: '/Projects', name: 'Projects',  component: Projects},
+    {path: '/Contact', name: 'Contact', component: Contact}
   ],
   mode: 'history'
 });

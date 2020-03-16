@@ -5,7 +5,7 @@
       </div>
       <div class="right">
         <transition>
-        <router-view></router-view>
+        <router-view />
         </transition>
       </div>
     </div>
@@ -57,7 +57,7 @@ export default {
   }
 }
 .left{
-  z-index: 1;
+  z-index: 3;
 }
 .right {
   position: relative;

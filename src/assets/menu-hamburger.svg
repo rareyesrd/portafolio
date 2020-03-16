@@ -3,8 +3,8 @@ aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Menu Hamburger</title>
   <desc>A line styled icon from Orion Icon Library.</desc>
   <path data-name="layer2"
-  fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="5" d="M2 14h60M2 32h36"
+  fill="none" stroke="rgba(73, 7, 143, 1)" stroke-miterlimit="10" stroke-width="5" d="M2 14h60M2 32h36"
   stroke-linejoin="round" stroke-linecap="round"></path>
-  <path data-name="layer1" fill="none" stroke="#fff" stroke-miterlimit="10"
+  <path data-name="layer1" fill="none" stroke="rgba(73, 7, 143, 1)" stroke-miterlimit="10"
   stroke-width="5" d="M2 50h60" stroke-linejoin="round" stroke-linecap="round"></path>
 </svg>

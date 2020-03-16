@@ -1,53 +1,55 @@
 <template>
   <div class="About">
-    <div class="container">
-      <div class="square-position">
-        <div class="content">
-          <div>
-            <h1>Rafael</h1>
-            <h1>&nbsp; &nbsp;Reyes</h1>
-          </div>
-          <div class="university">
-            <h5>
-              Student from UTESA
-              <br />(Universidad Tecnologica de Santiago)
-            </h5>
+    <div class="content">
+      <div class="container">
+        <div class="square-position">
+          <div class="content">
+            <div>
+              <h1>Rafael</h1>
+              <h1>&nbsp; &nbsp;Reyes</h1>
+            </div>
+            <div class="university">
+              <h5>
+                Student from UTESA
+                <br />(Universidad Tecnologica de Santiago)
+              </h5>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="square-position2">
-        <div class="content">
-          <div class="cover-letter">
-            <p>
-              I get passionated on building things for the web, I’ve been learning for almost a year.
-              <br />
-              <br />I'm currently working on some single page applications (SPA) Here you'll see the projects i've built.
-            </p>
-          </div>
-          <div class="skills">
-            <h5>Skills</h5>
-            <ul>
-              <li>
-                <p>Html5 + Css3</p>
-                <progress value="90" max="100">95%</progress>
-              </li>
-              <li>
-                <p>Sass (scss)</p>
-                <progress value="75" max="100"></progress>
-              </li>
-              <li>
-                <p>Javascript</p>
-                <progress value="55" max="100"></progress>
-              </li>
-              <li>
-                <p>Vuejs</p>
-                <progress value="50" max="100"></progress>
-              </li>
-              <li>
-                <p>Firebase</p>
-                <progress value="40" max="100"></progress>
-              </li>
-            </ul>
+        <div class="square-position2">
+          <div class="content">
+            <div class="cover-letter">
+              <p>
+                I get passionated on building things for the web, I’ve been learning for almost a year to became a front-end developer.
+                <br />
+                <br />I'm currently working on some single page applications (SPA) Here you'll see the projects i've built.
+              </p>
+            </div>
+            <div class="skills">
+              <h5>Skills</h5>
+              <ul>
+                <li>
+                  <p>Html5 + Css3</p>
+                  <progress value="90" max="100">95%</progress>
+                </li>
+                <li>
+                  <p>Sass (scss)</p>
+                  <progress value="75" max="100"></progress>
+                </li>
+                <li>
+                  <p>Javascript</p>
+                  <progress value="55" max="100"></progress>
+                </li>
+                <li>
+                  <p>Vuejs</p>
+                  <progress value="50" max="100"></progress>
+                </li>
+                <li>
+                  <p>Firebase</p>
+                  <progress value="40" max="100"></progress>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -109,56 +111,60 @@ export default {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgba(0, 0, 0, 0.89);
   background: url("../assets/bg-about.svg") no-repeat center center/cover;
-  width: 100%;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+.content {
   .container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top: 0;
     .square-position {
-      // position: relative;
-      height: 0;
-      .svg-background {
-        display: none;
-      }
       .content {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: flex-end;
-        height: 100px;
+        flex-wrap: wrap;
         div {
+          padding-top: 150px;
           h1 {
             font-family: "Rarepz-font";
-            font-size: 7.5rem;
-            line-height: 1.1;
+            font-size: 6.5rem;
+            line-height: 1;
             color: #000;
             z-index: 2;
             position: relative;
             text-shadow: 0px 2px 10px rgba(99, 50, 246, 0.5);
+            transition: all .3s ease-in;
+            animation: flip 8s infinite;
+            @media (max-width: 768px) {
+              font-size: 3.5rem;
+            }
+          }
+          @media (max-width: 768px) {
+            padding-top: 80px;
           }
         }
         .university {
+          padding-top: 5px;
           h5 {
             font-family: "Rarepz-font";
             font-size: 18px;
             font-weight: bold;
           }
         }
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
       }
     }
     .square-position2 {
+      margin-top: 150px;
+      margin-bottom:20px;
       .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         .cover-letter {
-          // display: flex;
-          // flex-direction: column;
-          // justify-content: space-around;
           max-width: 350px;
           p {
             font-family: "PT Sans", sans-serif;
@@ -170,21 +176,19 @@ export default {
           }
         }
         div.skills {
-          width: 500px;
           h5 {
             font-family: "Rarepz-font";
-            font-size: 90px;
+            font-size: 4rem;
             font-weight: bold;
             line-height: 1.5;
             letter-spacing: 2.5px;
             text-shadow: 0px 2px 10px rgba(99, 50, 246, 0.5);
-            margin-top: -100px;
+            @media (max-width: 768px) {
+              font-size: 3.5rem;
+            }
           }
           ul {
             list-style: square;
-            display: flex;
-            justify-content: flex-end;
-            flex-wrap: wrap;
             li {
               display: grid;
               grid-template-columns: 1fr 1fr;
@@ -203,16 +207,32 @@ export default {
             }
           }
         }
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
       }
+@media (max-width: 768px) {
+          margin-top: 30px;
+        }
     }
   }
 }
 .circle-animation {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 30%;
+  left: 1%;
   img {
-    animation: rotate 8s infinite;
+    width: 250px;
+    animation: rotate 12s infinite;
+    @media (max-width: 768px) {
+      width: 230px;
+    }
+    @media (max-width: 992px) {
+      width: 200px;
+    }
+  }
+  @media (max-width: 768px) {
+   display: none;
   }
 }
 @keyframes rotate {
@@ -232,4 +252,18 @@ export default {
     transform: rotate(360deg);
   }
 }
+@keyframes flip {
+   0% {
+      transform: perspective(0px) scale(1);
+      animation-timing-function: ease-out;
+   }  
+   50% {
+      transform: perspective(400px) scale(1.1);
+      animation-timing-function: ease-in;
+   }
+   100% {
+      transform: perspective(0px) scale(1);
+      animation-timing-function: ease;
+   }
+} 
 </style>
