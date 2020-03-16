@@ -1,6 +1,6 @@
 <template>
-    <div id="app">
-         
+    <div id="app" @mousemove="movement">
+      <div class="cursor" ref="cursor"></div>
       <div class="left">
         <Dashboard />
       </div>
@@ -23,9 +23,19 @@ export default {
   },
   data(){
     return{
-      
+      x: 0,
+      y: 0
     }
   },
+  methods:{
+    movement: function(event){
+      let cursor = this.$refs.cursor;
+      this.x = event.clientX;
+      this.y = event.clientY;
+      cursor.style.left = this.x + 'px';
+      cursor.style.top = this.y + 'px';
+    }
+  }
 };
 </script>
 
@@ -69,5 +79,27 @@ export default {
   @media (min-width: 768px) {
       width: 80%;
   }
+}
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(99, 50, 246, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  position: relative;
+}
+.cursor:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '•';
+  color: rgba(99, 50, 246, 0.5);
+  font-size: 30px;
+  display: grid;
+  place-items: center;
 }
 </style>
