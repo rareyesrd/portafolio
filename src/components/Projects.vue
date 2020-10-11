@@ -22,6 +22,13 @@ export default {
   data() {
     return {
       project: [
+         {
+          img: require("../assets/projects/landingPage.png"),
+          alt: "Landing Page",
+          github: "/",
+          demo: "https://dazzling-babbage-7af093.netlify.com/",
+          target: false
+        },
         {
           img: require("../assets/projects/grafifast.png"),
           alt: "Grafifast",
